@@ -15,12 +15,12 @@ public class UIManager : Singleton<UIManager>
 
     private void OnEnable()
     {
-        GameManager.Instance.OnGameStart += OnGameStarted;
+        GameManager.OnGameStart += OnGameStarted;
     }
 
     private void OnDisable()
     {
-        GameManager.Instance.OnGameStart -= OnGameStarted;
+        GameManager.OnGameStart -= OnGameStarted;
     }
 
     private void OnGameStarted()

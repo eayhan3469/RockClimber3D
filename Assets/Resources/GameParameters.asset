@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae6324887c2ecf64a84c39f97a6f0f38, type: 3}
   m_Name: GameParameters
   m_EditorClassIdentifier: 
-  ClimberJumpForce: 1000
+  ClimberJumpForce: 10000
