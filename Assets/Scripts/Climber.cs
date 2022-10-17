@@ -2,6 +2,8 @@ using DG.Tweening;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.CompilerServices;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -9,10 +11,10 @@ using UnityEngine.UIElements;
 public class Climber : MonoBehaviour
 {
     [SerializeField] private Rigidbody _rigidbody;
-    [SerializeField] private Rigidbody[] _grabberRigidbodies; //Right now left hand and right hand, could be added another parts.
+    [SerializeField] private Grabber[] _grabbers; //Right now left hand and right hand, could be added another parts.
 
     private Stone _grabbedStone;
-    private Rigidbody _selectedGrabber;
+    private Grabber _selectedGrabber;
 
     private void Awake()
     {
@@ -39,34 +41,49 @@ public class Climber : MonoBehaviour
             if (!stone.IsAvailable)
                 continue;
 
-            foreach (var grabber in _grabberRigidbodies)
-                if (Vector3.Distance(grabber.transform.position, stone.transform.position) < 1.5f)
-                    GrabToStone(grabber, stone);
+            foreach (var grabber in _grabbers)
+            {
+                if (Vector3.Distance(grabber.transform.position, stone.transform.position) < 1.5f && _selectedGrabber == null && _grabbedStone == null)
+                {
+                    _selectedGrabber = grabber;
+                    _grabbedStone = stone;
+                    GrabToStone();
+                }
+            }
         }
-
-        if (_selectedGrabber != null && _grabbedStone != null)
-            _selectedGrabber.transform.position = _grabbedStone.transform.position;
     }
 
     private void OnStoneClicked(Stone stone)
     {
-        foreach (var grabber in _grabberRigidbodies)
-            grabber.isKinematic = false;
+        if (_selectedGrabber != null)
+        {
+            _selectedGrabber.SetDefaultConnectedBody();
+            _selectedGrabber = null;
+        }
 
         _grabbedStone = null;
-        _selectedGrabber = null;
 
         var direction = (stone.transform.position - _rigidbody.transform.position).normalized;
         _rigidbody.AddForce(direction * GameParameters.Instance.ClimberJumpForce);
     }
 
-    private void GrabToStone(Rigidbody grabber, Stone stone)
+    private void GrabToStone()
     {
-        _grabbedStone = stone;
-        _selectedGrabber = grabber;
+        if (_grabbedStone != null)
+        {
+            foreach (var s in GameManager.Instance.Stones)
+                if (s != _grabbedStone)
+                    s.IsAvailable = true;
+        }
 
-        stone.IsAvailable = false;
-        grabber.isKinematic = true;
+        _grabbedStone.IsAvailable = false;
+        _selectedGrabber.transform.DOMove(_grabbedStone.transform.position, 1f).OnComplete(() => _selectedGrabber.UpdateConnectedBody(_grabbedStone.Rigidbody));
+
+        if (_grabbedStone.IsFinishStone)
+        {
+            Debug.Log("GameFinished");
+        }
+
         Debug.Log("grabbed");
     }
 

@@ -659,8 +659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 220477911062634930}
-  _leftHandBody: {fileID: 220477909374064894}
-  _rightHandBody: {fileID: 220477910626702694}
+  _grabbers: []
 --- !u!1 &1268390266067621475
 GameObject:
   m_ObjectHideFlags: 0
