@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: GameParameters
   m_EditorClassIdentifier: 
   ClimberJumpForce: 12500
-  _sawObstacleSpeed: 2
+  MinGrabDistance: 2
+  _sawObstacleSpeed: 1

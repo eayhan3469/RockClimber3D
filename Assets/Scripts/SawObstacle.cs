@@ -13,12 +13,12 @@ public class SawObstacle : Obstacle
         transform.position = new Vector3(0f, transform.position.y, transform.position.z);
         _speed = 1f / Mathf.Clamp(_overriddenSpeed, 0.1f, Mathf.Infinity);
 
-        MoveLeftRight();
-
         if (_overriddenSpeed == 0f)
             _speed = GameParameters.Instance.SawObstacleSpeed;
         else
             _speed = 1f / Mathf.Clamp(_overriddenSpeed, 0.1f, Mathf.Infinity);
+
+        MoveLeftRight();
     }
 
     private void MoveLeftRight()

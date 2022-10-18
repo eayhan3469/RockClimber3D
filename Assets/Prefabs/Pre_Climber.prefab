@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1574253785}
   m_Layer: 0
   m_Name: mixamorig:RightArm
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50,7 +50,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!136 &1574253786
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -58,13 +58,13 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 76676669517865928}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fbc5a37fbbcb5d143a034bd0e0956f0e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.056701135
-  m_Height: 0.312922
+  m_Height: 0.28575236
   m_Direction: 1
-  m_Center: {x: 0.0000000012712211, y: 0.15646099, z: 0.009936624}
+  m_Center: {x: 0.0000000010687924, y: 0.15985718, z: 0.009936624}
 --- !u!144 &1574253785
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -81,7 +81,7 @@ CharacterJoint:
   serializedVersion: 2
   m_SwingAxis: {x: -1, y: 0, z: 0}
   m_TwistLimitSpring:
-    spring: 0
+    spring: 1000000
     damper: 0
   m_LowTwistLimit:
     limit: -70
@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 7004196533451511827}
   m_Layer: 0
   m_Name: mixamorig:RightShoulder
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -154,7 +154,7 @@ GameObject:
   - component: {fileID: 4196838085404577086}
   m_Layer: 0
   m_Name: mixamorig:HairRightD1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -185,7 +185,7 @@ GameObject:
   - component: {fileID: 8604885013125101585}
   m_Layer: 0
   m_Name: mixamorig:Left_Sleeve
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -216,7 +216,7 @@ GameObject:
   - component: {fileID: 5296842489799220946}
   m_Layer: 0
   m_Name: mixamorig:RightHandPinky2
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 4040833934108075521}
   m_Layer: 0
   m_Name: mixamorig:HairRightA1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -279,7 +279,7 @@ GameObject:
   - component: {fileID: 4536211881975549905}
   m_Layer: 0
   m_Name: mixamorig:HairRightE1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -312,7 +312,7 @@ GameObject:
   - component: {fileID: 5465940245933152103}
   m_Layer: 0
   m_Name: mixamorig:Hips
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -349,8 +349,8 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Constraints: 8
+  m_CollisionDetection: 1
 --- !u!65 &5465940245933152103
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -375,7 +375,7 @@ GameObject:
   - component: {fileID: 22027199509299910}
   m_Layer: 0
   m_Name: mixamorig:RightHandThumb4
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -406,7 +406,7 @@ GameObject:
   - component: {fileID: 520780268913273253}
   m_Layer: 0
   m_Name: mixamorig:Whistle2
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -438,7 +438,7 @@ GameObject:
   - component: {fileID: 6291174102903048732}
   m_Layer: 0
   m_Name: Fitness_Grandma_BodyGeo
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -621,7 +621,7 @@ GameObject:
   - component: {fileID: 3081658165142490939}
   m_Layer: 0
   m_Name: Pre_Climber
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -673,7 +673,7 @@ GameObject:
   - component: {fileID: 6522292278342996256}
   m_Layer: 0
   m_Name: mixamorig:LeftToeBase
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -705,7 +705,7 @@ GameObject:
   - component: {fileID: 4641478899636120572}
   m_Layer: 0
   m_Name: mixamorig:Whistle0
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -737,7 +737,7 @@ GameObject:
   - component: {fileID: 7282416507359543221}
   m_Layer: 0
   m_Name: mixamorig:LeftHandIndex3
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -769,7 +769,7 @@ GameObject:
   - component: {fileID: 1637282023211909053}
   m_Layer: 0
   m_Name: mixamorig:LeftHandRing2
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -801,7 +801,7 @@ GameObject:
   - component: {fileID: 5529673890739787106}
   m_Layer: 0
   m_Name: mixamorig:Spine
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -834,7 +834,7 @@ GameObject:
   - component: {fileID: 2948364931788665070}
   m_Layer: 0
   m_Name: mixamorig:Left_ShortSleeve
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -865,7 +865,7 @@ GameObject:
   - component: {fileID: 727202467624222334}
   m_Layer: 0
   m_Name: mixamorig:HairRightB1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -896,7 +896,7 @@ GameObject:
   - component: {fileID: 4117036952932039557}
   m_Layer: 0
   m_Name: mixamorig:HairMidE1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -927,7 +927,7 @@ GameObject:
   - component: {fileID: 8226408369253295912}
   m_Layer: 0
   m_Name: mixamorig:RightHandIndex1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -959,7 +959,7 @@ GameObject:
   - component: {fileID: 3634769177515903502}
   m_Layer: 0
   m_Name: mixamorig:Right_Sleeve
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -990,7 +990,7 @@ GameObject:
   - component: {fileID: 1408857457416989158}
   m_Layer: 0
   m_Name: mixamorig:RightHandPinky1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1022,7 +1022,7 @@ GameObject:
   - component: {fileID: 3416720251219695764}
   m_Layer: 0
   m_Name: mixamorig:RightHandMiddle3
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1054,7 +1054,7 @@ GameObject:
   - component: {fileID: 2822647073686975134}
   m_Layer: 0
   m_Name: mixamorig:Hood2
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1085,7 +1085,7 @@ GameObject:
   - component: {fileID: 5296529103881591120}
   m_Layer: 0
   m_Name: mixamorig:Whistle1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1117,7 +1117,7 @@ GameObject:
   - component: {fileID: 6020463088133983035}
   m_Layer: 0
   m_Name: mixamorig:HairMidA1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1148,7 +1148,7 @@ GameObject:
   - component: {fileID: 6408655358751289809}
   m_Layer: 0
   m_Name: mixamorig:LeftHandRing1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1180,7 +1180,7 @@ GameObject:
   - component: {fileID: 2311449144812087242}
   m_Layer: 0
   m_Name: mixamorig:Right_ShortSleeve
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1211,7 +1211,7 @@ GameObject:
   - component: {fileID: 7041605899182400132}
   m_Layer: 0
   m_Name: mixamorig:Visor1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1242,7 +1242,7 @@ GameObject:
   - component: {fileID: 2493026248336138618}
   m_Layer: 0
   m_Name: mixamorig:LeftShoulder
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1274,7 +1274,7 @@ GameObject:
   - component: {fileID: 7912162015047552029}
   m_Layer: 0
   m_Name: mixamorig:HairLeftE1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1305,7 +1305,7 @@ GameObject:
   - component: {fileID: 7793213684405267096}
   m_Layer: 0
   m_Name: mixamorig:Left_Butt1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1337,11 +1337,11 @@ GameObject:
   - component: {fileID: 1908386555}
   - component: {fileID: 1908386557}
   - component: {fileID: 1908386554}
-  - component: {fileID: 1908386556}
   - component: {fileID: 1908386553}
+  - component: {fileID: 476976494}
   m_Layer: 0
   m_Name: mixamorig:RightHand
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1381,7 +1381,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!136 &1908386557
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1389,7 +1389,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2783482114170113167}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fbc5a37fbbcb5d143a034bd0e0956f0e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.048461407
@@ -1411,42 +1411,6 @@ FixedJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!59 &1908386556
-HingeJoint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2783482114170113167}
-  m_ConnectedBody: {fileID: 1677334979}
-  m_ConnectedArticulationBody: {fileID: 0}
-  m_Anchor: {x: 0, y: 0, z: 0}
-  m_Axis: {x: 0, y: 1, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
-  m_UseSpring: 0
-  m_Spring:
-    spring: 0
-    damper: 0
-    targetPosition: 0
-  m_UseMotor: 0
-  m_Motor:
-    targetVelocity: 0
-    force: 0
-    freeSpin: 0
-  m_UseLimits: 0
-  m_Limits:
-    min: 0
-    max: 0
-    bounciness: 0
-    bounceMinVelocity: 0.2
-    contactDistance: 0
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_EnableCollision: 0
-  m_EnablePreprocessing: 1
-  m_MassScale: 1
-  m_ConnectedMassScale: 1
 --- !u!114 &1908386553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1461,6 +1425,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Rigidbody: {fileID: 0}
   DefaultConnectedRigidbody: {fileID: 0}
+--- !u!144 &476976494
+CharacterJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2783482114170113167}
+  m_ConnectedBody: {fileID: 1677334979}
+  m_ConnectedArticulationBody: {fileID: 0}
+  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Axis: {x: 1, y: 0, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: -0.0000000068860047, y: 0.317236, z: 0.000000067619794}
+  serializedVersion: 2
+  m_SwingAxis: {x: 0, y: 1, z: 0}
+  m_TwistLimitSpring:
+    spring: 1000000
+    damper: 0
+  m_LowTwistLimit:
+    limit: -20
+    bounciness: 0
+    contactDistance: 0
+  m_HighTwistLimit:
+    limit: 70
+    bounciness: 0
+    contactDistance: 0
+  m_SwingLimitSpring:
+    spring: 0
+    damper: 0
+  m_Swing1Limit:
+    limit: 40
+    bounciness: 0
+    contactDistance: 0
+  m_Swing2Limit:
+    limit: 40
+    bounciness: 0
+    contactDistance: 0
+  m_EnableProjection: 0
+  m_ProjectionDistance: 0.1
+  m_ProjectionAngle: 180
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &2816249570917594967
 GameObject:
   m_ObjectHideFlags: 0
@@ -1472,7 +1482,7 @@ GameObject:
   - component: {fileID: 6110369264035873034}
   m_Layer: 0
   m_Name: mixamorig:RightHandRing2
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1507,7 +1517,7 @@ GameObject:
   - component: {fileID: 1541801257}
   m_Layer: 0
   m_Name: mixamorig:LeftUpLeg
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1545,7 +1555,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!136 &1541801258
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1553,13 +1563,13 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2921231432060070819}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fbc5a37fbbcb5d143a034bd0e0956f0e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.09876083
+  m_Radius: 0.057376683
   m_Height: 0.32920274
   m_Direction: 1
-  m_Center: {x: 0, y: 0.16460137, z: 0}
+  m_Center: {x: -0.009618355, y: 0.16460119, z: -0.011146821}
 --- !u!144 &1541801257
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -1576,7 +1586,7 @@ CharacterJoint:
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
-    spring: 0
+    spring: 1000000
     damper: 0
   m_LowTwistLimit:
     limit: -20
@@ -1617,7 +1627,7 @@ GameObject:
   - component: {fileID: 3522075349736085893}
   m_Layer: 0
   m_Name: mixamorig:RightHandIndex2
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1649,7 +1659,7 @@ GameObject:
   - component: {fileID: 3396198845460826003}
   m_Layer: 0
   m_Name: mixamorig:LeftHandMiddle3
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1684,7 +1694,7 @@ GameObject:
   - component: {fileID: 1311690091}
   m_Layer: 0
   m_Name: mixamorig:LeftLeg
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1720,7 +1730,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!136 &1311690093
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1728,13 +1738,13 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2977655906642027406}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fbc5a37fbbcb5d143a034bd0e0956f0e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.108652905
-  m_Height: 0.43461162
+  m_Radius: 0.057398565
+  m_Height: 0.41875538
   m_Direction: 1
-  m_Center: {x: 0, y: 0.21730581, z: 0}
+  m_Center: {x: 0.0029569822, y: 0.22523439, z: -0.00000018783251}
 --- !u!144 &1311690091
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -1751,7 +1761,7 @@ CharacterJoint:
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
-    spring: 0
+    spring: 1000000
     damper: 0
   m_LowTwistLimit:
     limit: -80
@@ -1792,7 +1802,7 @@ GameObject:
   - component: {fileID: 6561575185168187010}
   m_Layer: 0
   m_Name: mixamorig:RightHandMiddle2
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1824,7 +1834,7 @@ GameObject:
   - component: {fileID: 8301918994591938265}
   m_Layer: 0
   m_Name: mixamorig:Hood0
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1856,7 +1866,7 @@ GameObject:
   - component: {fileID: 8912676237979553800}
   m_Layer: 0
   m_Name: mixamorig:HeadTop_End
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1887,7 +1897,7 @@ GameObject:
   - component: {fileID: 1075694826755957804}
   m_Layer: 0
   m_Name: mixamorig:HairRightC1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1918,7 +1928,7 @@ GameObject:
   - component: {fileID: 2542692697379505980}
   m_Layer: 0
   m_Name: mixamorig:RightHandRing4
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1949,7 +1959,7 @@ GameObject:
   - component: {fileID: 1222433010325456614}
   m_Layer: 0
   m_Name: mixamorig:HairLeftB1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1980,7 +1990,7 @@ GameObject:
   - component: {fileID: 7854985254426181715}
   m_Layer: 0
   m_Name: mixamorig:RightHandIndex4
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2011,7 +2021,7 @@ GameObject:
   - component: {fileID: 5618792287262411371}
   m_Layer: 0
   m_Name: mixamorig:HairLeftF1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2042,7 +2052,7 @@ GameObject:
   - component: {fileID: 3131961906404161318}
   m_Layer: 0
   m_Name: mixamorig:RightToeBase
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2074,7 +2084,7 @@ GameObject:
   - component: {fileID: 2386104655322304486}
   m_Layer: 0
   m_Name: mixamorig:RightHandPinky3
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2106,7 +2116,7 @@ GameObject:
   - component: {fileID: 1105152957693183248}
   m_Layer: 0
   m_Name: mixamorig:LeftHandIndex4
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2137,7 +2147,7 @@ GameObject:
   - component: {fileID: 6441060929713847708}
   m_Layer: 0
   m_Name: mixamorig:Neck
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2172,7 +2182,7 @@ GameObject:
   - component: {fileID: 1546266188}
   m_Layer: 0
   m_Name: mixamorig:LeftForeArm
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2209,7 +2219,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!136 &1546266190
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2217,13 +2227,13 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3873701099053724869}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fbc5a37fbbcb5d143a034bd0e0956f0e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.05094783
-  m_Height: 0.34142306
+  m_Height: 0.31087908
   m_Direction: 1
-  m_Center: {x: 0.0000000049475557, y: 0.17071153, z: 0.010940676}
+  m_Center: {x: 0.000000005175124, y: 0.15543954, z: 0.010940675}
 --- !u!144 &1546266188
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -2240,7 +2250,7 @@ CharacterJoint:
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
-    spring: 0
+    spring: 1000000
     damper: 0
   m_LowTwistLimit:
     limit: -90
@@ -2281,7 +2291,7 @@ GameObject:
   - component: {fileID: 875467357613419227}
   m_Layer: 0
   m_Name: mixamorig:RightHandRing3
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2313,7 +2323,7 @@ GameObject:
   - component: {fileID: 8102283222970529580}
   m_Layer: 0
   m_Name: mixamorig:HairMidD1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2344,7 +2354,7 @@ GameObject:
   - component: {fileID: 8182212254595186572}
   m_Layer: 0
   m_Name: mixamorig:LeftHandRing4
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2375,7 +2385,7 @@ GameObject:
   - component: {fileID: 1783843428371058836}
   m_Layer: 0
   m_Name: mixamorig:RightHandThumb3
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2407,7 +2417,7 @@ GameObject:
   - component: {fileID: 963309227537857592}
   m_Layer: 0
   m_Name: mixamorig:LeftHandThumb3
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2439,7 +2449,7 @@ GameObject:
   - component: {fileID: 1258897137923074658}
   m_Layer: 0
   m_Name: mixamorig:LeftHandIndex1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2472,11 +2482,11 @@ GameObject:
   - component: {fileID: 84534929}
   - component: {fileID: 84534931}
   - component: {fileID: 84534928}
-  - component: {fileID: 84534930}
   - component: {fileID: 84534927}
+  - component: {fileID: 1600045922}
   m_Layer: 0
   m_Name: mixamorig:LeftHand
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2516,7 +2526,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!136 &84534931
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2524,7 +2534,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4426486788840745026}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fbc5a37fbbcb5d143a034bd0e0956f0e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.05094783
@@ -2546,42 +2556,6 @@ FixedJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!59 &84534930
-HingeJoint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4426486788840745026}
-  m_ConnectedBody: {fileID: 1546266189}
-  m_ConnectedArticulationBody: {fileID: 0}
-  m_Anchor: {x: 0, y: 0, z: 0}
-  m_Axis: {x: 0, y: 1, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
-  m_UseSpring: 0
-  m_Spring:
-    spring: 0
-    damper: 0
-    targetPosition: 0
-  m_UseMotor: 0
-  m_Motor:
-    targetVelocity: 0
-    force: 0
-    freeSpin: 0
-  m_UseLimits: 0
-  m_Limits:
-    min: 0
-    max: 0
-    bounciness: 0
-    bounceMinVelocity: 0.2
-    contactDistance: 0
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_EnableCollision: 0
-  m_EnablePreprocessing: 1
-  m_MassScale: 1
-  m_ConnectedMassScale: 1
 --- !u!114 &84534927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2596,6 +2570,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Rigidbody: {fileID: 0}
   DefaultConnectedRigidbody: {fileID: 0}
+--- !u!144 &1600045922
+CharacterJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4426486788840745026}
+  m_ConnectedBody: {fileID: 1546266189}
+  m_ConnectedArticulationBody: {fileID: 0}
+  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Axis: {x: 1, y: 0, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: -0.000000022921869, y: 0.31723642, z: 0.000000008015197}
+  serializedVersion: 2
+  m_SwingAxis: {x: 0, y: 1, z: 0}
+  m_TwistLimitSpring:
+    spring: 1000000
+    damper: 0
+  m_LowTwistLimit:
+    limit: -20
+    bounciness: 0
+    contactDistance: 0
+  m_HighTwistLimit:
+    limit: 70
+    bounciness: 0
+    contactDistance: 0
+  m_SwingLimitSpring:
+    spring: 0
+    damper: 0
+  m_Swing1Limit:
+    limit: 40
+    bounciness: 0
+    contactDistance: 0
+  m_Swing2Limit:
+    limit: 40
+    bounciness: 0
+    contactDistance: 0
+  m_EnableProjection: 0
+  m_ProjectionDistance: 0.1
+  m_ProjectionAngle: 180
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &4515939437324194595
 GameObject:
   m_ObjectHideFlags: 0
@@ -2607,7 +2627,7 @@ GameObject:
   - component: {fileID: 5022134068169370316}
   m_Layer: 0
   m_Name: mixamorig:RightHandIndex3
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2642,7 +2662,7 @@ GameObject:
   - component: {fileID: 888205199}
   m_Layer: 0
   m_Name: mixamorig:RightLeg
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2678,7 +2698,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!136 &888205201
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2686,13 +2706,13 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4670348795828309190}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fbc5a37fbbcb5d143a034bd0e0956f0e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.108652785
-  m_Height: 0.43461114
+  m_Radius: 0.05444154
+  m_Height: 0.42271963
   m_Direction: 1
-  m_Center: {x: 0, y: 0.21730557, z: 0}
+  m_Center: {x: 0.0059139566, y: 0.2232518, z: -0.00000012558932}
 --- !u!144 &888205199
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -2709,7 +2729,7 @@ CharacterJoint:
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
-    spring: 0
+    spring: 1000000
     damper: 0
   m_LowTwistLimit:
     limit: -80
@@ -2750,7 +2770,7 @@ GameObject:
   - component: {fileID: 7859522359100317360}
   m_Layer: 0
   m_Name: mixamorig:LeftHandMiddle4
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2781,7 +2801,7 @@ GameObject:
   - component: {fileID: 605316668413591975}
   m_Layer: 0
   m_Name: mixamorig:RightHandMiddle4
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2812,7 +2832,7 @@ GameObject:
   - component: {fileID: 3140923368282771861}
   m_Layer: 0
   m_Name: mixamorig:LeftHandThumb4
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2843,7 +2863,7 @@ GameObject:
   - component: {fileID: 8517813543195342192}
   m_Layer: 0
   m_Name: mixamorig:RightHandThumb1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2875,7 +2895,7 @@ GameObject:
   - component: {fileID: 2183323772447564650}
   m_Layer: 0
   m_Name: mixamorig:HairMidF1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2906,7 +2926,7 @@ GameObject:
   - component: {fileID: 6762710829968210852}
   m_Layer: 0
   m_Name: mixamorig:LeftHandMiddle2
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2938,7 +2958,7 @@ GameObject:
   - component: {fileID: 440122538758582753}
   m_Layer: 0
   m_Name: mixamorig:Spine2
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2977,7 +2997,7 @@ GameObject:
   - component: {fileID: 8633259913079614090}
   m_Layer: 0
   m_Name: Fitness_Grandma_MouthAnimGeo
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3158,7 +3178,7 @@ GameObject:
   - component: {fileID: 1343425955390080517}
   m_Layer: 0
   m_Name: mixamorig:Belly1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3189,7 +3209,7 @@ GameObject:
   - component: {fileID: 3681116203174198258}
   m_Layer: 0
   m_Name: mixamorig:HairRightF1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3220,7 +3240,7 @@ GameObject:
   - component: {fileID: 6869088343161396793}
   m_Layer: 0
   m_Name: mixamorig:LeftHandPinky2
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3252,7 +3272,7 @@ GameObject:
   - component: {fileID: 7844305016443073733}
   m_Layer: 0
   m_Name: mixamorig:HairMidC1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3283,7 +3303,7 @@ GameObject:
   - component: {fileID: 936661786019478592}
   m_Layer: 0
   m_Name: mixamorig:HairLeftC1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3314,7 +3334,7 @@ GameObject:
   - component: {fileID: 2942860979201006529}
   m_Layer: 0
   m_Name: mixamorig:Right_Breast1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3345,7 +3365,7 @@ GameObject:
   - component: {fileID: 425569833039838148}
   m_Layer: 0
   m_Name: mixamorig:LeftHandPinky4
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3379,7 +3399,7 @@ GameObject:
   - component: {fileID: 574971161}
   m_Layer: 0
   m_Name: mixamorig:RightUpLeg
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3417,7 +3437,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!136 &574971162
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3425,13 +3445,13 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6207523508012602629}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fbc5a37fbbcb5d143a034bd0e0956f0e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.098760866
+  m_Radius: 0.048942424
   m_Height: 0.32920286
   m_Direction: 1
-  m_Center: {x: 0, y: 0.16460143, z: 0}
+  m_Center: {x: 1.4509675e-15, y: 0.16460143, z: -0.006710731}
 --- !u!144 &574971161
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -3448,7 +3468,7 @@ CharacterJoint:
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
-    spring: 0
+    spring: 1000000
     damper: 0
   m_LowTwistLimit:
     limit: -20
@@ -3489,7 +3509,7 @@ GameObject:
   - component: {fileID: 1593467653748043861}
   m_Layer: 0
   m_Name: mixamorig:HairLeftA1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3521,7 +3541,7 @@ GameObject:
   - component: {fileID: 8686513008568762515}
   m_Layer: 0
   m_Name: Fitness_Grandma_EyesAnimGeo
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3702,7 +3722,7 @@ GameObject:
   - component: {fileID: 4822433055431582731}
   m_Layer: 0
   m_Name: mixamorig:LeftHandPinky1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3734,7 +3754,7 @@ GameObject:
   - component: {fileID: 7133674014867593987}
   m_Layer: 0
   m_Name: mixamorig:HairMidB1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3765,7 +3785,7 @@ GameObject:
   - component: {fileID: 5126488075555655421}
   m_Layer: 0
   m_Name: mixamorig:Left_Breast1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3796,7 +3816,7 @@ GameObject:
   - component: {fileID: 2564759035067449279}
   m_Layer: 0
   m_Name: mixamorig:LeftFoot
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3828,7 +3848,7 @@ GameObject:
   - component: {fileID: 7918890343638969660}
   m_Layer: 0
   m_Name: mixamorig:Hood1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3861,7 +3881,7 @@ GameObject:
   - component: {fileID: 2915381596471236889}
   m_Layer: 0
   m_Name: Fitness_Grandma_BrowsAnimGeo
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4042,7 +4062,7 @@ GameObject:
   - component: {fileID: 7839787024912334479}
   m_Layer: 0
   m_Name: mixamorig:Right_Butt1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4076,7 +4096,7 @@ GameObject:
   - component: {fileID: 548232547}
   m_Layer: 0
   m_Name: mixamorig:Head
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4131,7 +4151,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!135 &548232549
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4139,7 +4159,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7226046363316396778}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fbc5a37fbbcb5d143a034bd0e0956f0e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -4161,7 +4181,7 @@ CharacterJoint:
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
-    spring: 0
+    spring: 1000000
     damper: 0
   m_LowTwistLimit:
     limit: -40
@@ -4202,7 +4222,7 @@ GameObject:
   - component: {fileID: 2583789123800793172}
   m_Layer: 0
   m_Name: mixamorig:LeftHandThumb2
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4234,7 +4254,7 @@ GameObject:
   - component: {fileID: 9044140375438673538}
   m_Layer: 0
   m_Name: mixamorig:RightHandRing1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4266,7 +4286,7 @@ GameObject:
   - component: {fileID: 4972390812000742872}
   m_Layer: 0
   m_Name: mixamorig:LeftHandThumb1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4298,7 +4318,7 @@ GameObject:
   - component: {fileID: 4257834338297222390}
   m_Layer: 0
   m_Name: mixamorig:LeftToe_End
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4329,7 +4349,7 @@ GameObject:
   - component: {fileID: 6283410529183608414}
   m_Layer: 0
   m_Name: mixamorig:RightHandPinky4
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4360,7 +4380,7 @@ GameObject:
   - component: {fileID: 7830391319978973060}
   m_Layer: 0
   m_Name: mixamorig:RightToe_End
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4391,7 +4411,7 @@ GameObject:
   - component: {fileID: 1371301525891796162}
   m_Layer: 0
   m_Name: mixamorig:LeftHandPinky3
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4423,7 +4443,7 @@ GameObject:
   - component: {fileID: 3634108459565496117}
   m_Layer: 0
   m_Name: mixamorig:LeftHandRing3
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4455,7 +4475,7 @@ GameObject:
   - component: {fileID: 828233619416270834}
   m_Layer: 0
   m_Name: mixamorig:RightFoot
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4490,7 +4510,7 @@ GameObject:
   - component: {fileID: 1677334978}
   m_Layer: 0
   m_Name: mixamorig:RightForeArm
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4527,7 +4547,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!136 &1677334980
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4535,13 +4555,13 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8716795690960232049}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fbc5a37fbbcb5d143a034bd0e0956f0e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.048461407
-  m_Height: 0.35243782
+  m_Height: 0.30760786
   m_Direction: 1
-  m_Center: {x: 0.0000000027793727, y: 0.17621888, z: 0.014076896}
+  m_Center: {x: 0.0000000027793676, y: 0.15380387, z: 0.014076892}
 --- !u!144 &1677334978
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -4558,7 +4578,7 @@ CharacterJoint:
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
-    spring: 0
+    spring: 1000000
     damper: 0
   m_LowTwistLimit:
     limit: -90
@@ -4602,7 +4622,7 @@ GameObject:
   - component: {fileID: 624955620}
   m_Layer: 0
   m_Name: mixamorig:LeftArm
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4638,7 +4658,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!136 &624955622
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4646,13 +4666,13 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8741543141373219853}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fbc5a37fbbcb5d143a034bd0e0956f0e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.05466583
-  m_Height: 0.3129216
+  m_Height: 0.2899475
   m_Direction: 1
-  m_Center: {x: -0.0000000018283044, y: 0.15646079, z: 0.015148641}
+  m_Center: {x: -0.0000000017256008, y: 0.15990694, z: 0.015148641}
 --- !u!144 &624955620
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -4669,7 +4689,7 @@ CharacterJoint:
   serializedVersion: 2
   m_SwingAxis: {x: 1, y: 0, z: 0}
   m_TwistLimitSpring:
-    spring: 0
+    spring: 1000000
     damper: 0
   m_LowTwistLimit:
     limit: -70
@@ -4710,7 +4730,7 @@ GameObject:
   - component: {fileID: 7596111970690993606}
   m_Layer: 0
   m_Name: mixamorig:LeftHandIndex2
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4742,7 +4762,7 @@ GameObject:
   - component: {fileID: 3596231226985443941}
   m_Layer: 0
   m_Name: mixamorig:RightHandMiddle1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4777,7 +4797,7 @@ GameObject:
   - component: {fileID: 728055880}
   m_Layer: 0
   m_Name: mixamorig:Spine1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4813,7 +4833,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!65 &728055882
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4821,7 +4841,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9089541780067814793}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fbc5a37fbbcb5d143a034bd0e0956f0e, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -4843,7 +4863,7 @@ CharacterJoint:
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
-    spring: 0
+    spring: 1000000
     damper: 0
   m_LowTwistLimit:
     limit: -20
@@ -4884,7 +4904,7 @@ GameObject:
   - component: {fileID: 3623856107118291693}
   m_Layer: 0
   m_Name: mixamorig:HairLeftD1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4915,7 +4935,7 @@ GameObject:
   - component: {fileID: 8187333711327024742}
   m_Layer: 0
   m_Name: mixamorig:LeftHandMiddle1
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4947,7 +4967,7 @@ GameObject:
   - component: {fileID: 8135046512224770323}
   m_Layer: 0
   m_Name: mixamorig:RightHandThumb2
-  m_TagString: Untagged
+  m_TagString: Climber
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

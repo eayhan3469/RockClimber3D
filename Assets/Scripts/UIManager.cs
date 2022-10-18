@@ -6,11 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : Singleton<UIManager>
 {
-    [SerializeField]
-    private GameObject _tapToPlayScreen;
-
-    [SerializeField]
-    private GameObject _gameOverScreen;
+    [SerializeField] private GameObject _tapToPlayScreen;
+    [SerializeField] private GameObject _finishScreen;
+    [SerializeField] private GameObject _gameOverScreen;
 
     protected override void Awake()
     {
@@ -20,13 +18,24 @@ public class UIManager : Singleton<UIManager>
     private void OnEnable()
     {
         GameManager.OnGameStart += OnGameStarted;
+        GameManager.OnGameFinish += OnGameFinished;
         GameManager.OnGameFail += OnGameFailed;
     }
 
     private void OnDisable()
     {
         GameManager.OnGameStart -= OnGameStarted;
+        GameManager.OnGameFinish -= OnGameFinished;
         GameManager.OnGameFail -= OnGameFailed;
+    }
+
+    private void OnGameStarted()
+    {
+        _tapToPlayScreen.SetActive(false);
+    }
+    private void OnGameFinished()
+    {
+        _finishScreen.SetActive(true);
     }
 
     private void OnGameFailed()
@@ -34,12 +43,7 @@ public class UIManager : Singleton<UIManager>
         _gameOverScreen.SetActive(true);
     }
 
-    private void OnGameStarted()
-    {
-        _tapToPlayScreen.SetActive(false);
-    }
-
-    public void OnGameOverScreenClicked()
+    public void OnGameRestartClicked()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }

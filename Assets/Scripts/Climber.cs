@@ -15,6 +15,7 @@ public class Climber : MonoBehaviour
 
     private Stone _grabbedStone;
     private Grabber _selectedGrabber;
+    private Rigidbody[] _rigidbodies;
 
     private void Awake()
     {
@@ -25,6 +26,8 @@ public class Climber : MonoBehaviour
     {
         GameManager.OnGameStart += OnGameStarted;
         GameManager.OnAStoneClicked += OnStoneClicked;
+
+        _rigidbodies = GetComponentsInChildren<Rigidbody>();
     }
 
 
@@ -43,7 +46,7 @@ public class Climber : MonoBehaviour
 
             foreach (var grabber in _grabbers)
             {
-                if (Vector3.Distance(grabber.transform.position, stone.transform.position) < 1.5f && _selectedGrabber == null && _grabbedStone == null)
+                if (Vector3.Distance(grabber.transform.position, stone.transform.position) < GameParameters.Instance.MinGrabDistance && _selectedGrabber == null && _grabbedStone == null)
                 {
                     _selectedGrabber = grabber;
                     _grabbedStone = stone;
@@ -66,6 +69,12 @@ public class Climber : MonoBehaviour
             _selectedGrabber = null;
         }
 
+        foreach (var rb in _rigidbodies)
+        {
+            rb.angularDrag = 0f;
+            rb.drag = 0f;
+        }
+
         _grabbedStone = null;
 
         var direction = (stone.transform.position - _rigidbody.transform.position).normalized;
@@ -74,22 +83,22 @@ public class Climber : MonoBehaviour
 
     private void GrabToStone()
     {
-        //if (_grabbedStone != null)
-        //{
-        //    foreach (var s in GameManager.Instance.Stones)
-        //        if (s != _grabbedStone)
-        //            s.IsAvailable = true;
-        //}
-
         _grabbedStone.IsAvailable = false;
         _selectedGrabber.transform.DOMove(_grabbedStone.transform.position, 1f).OnComplete(() => _selectedGrabber.UpdateConnectedBody(_grabbedStone.Rigidbody));
 
-        if (_grabbedStone.IsFinishStone)
+        DOVirtual.DelayedCall(1f, () =>
         {
-            Debug.Log("GameFinished");
-        }
+            foreach (var rb in _rigidbodies)
+            {
+                rb.velocity = Vector3.zero;
+                rb.angularVelocity = Vector3.zero;
+                rb.angularDrag = 100f;
+                rb.drag = 5f;
+            }
+        });
 
-        Debug.Log("grabbed");
+        if (_grabbedStone.IsFinishStone)
+            GameManager.OnGameFinish?.Invoke();
     }
 
     private void OnGameStarted()
