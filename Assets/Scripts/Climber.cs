@@ -51,6 +51,11 @@ public class Climber : MonoBehaviour
                 }
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            _grabbers[0].Rigidbody.AddForce(Vector3.up * 5000f);
+        }
     }
 
     private void OnStoneClicked(Stone stone)
@@ -69,12 +74,12 @@ public class Climber : MonoBehaviour
 
     private void GrabToStone()
     {
-        if (_grabbedStone != null)
-        {
-            foreach (var s in GameManager.Instance.Stones)
-                if (s != _grabbedStone)
-                    s.IsAvailable = true;
-        }
+        //if (_grabbedStone != null)
+        //{
+        //    foreach (var s in GameManager.Instance.Stones)
+        //        if (s != _grabbedStone)
+        //            s.IsAvailable = true;
+        //}
 
         _grabbedStone.IsAvailable = false;
         _selectedGrabber.transform.DOMove(_grabbedStone.transform.position, 1f).OnComplete(() => _selectedGrabber.UpdateConnectedBody(_grabbedStone.Rigidbody));

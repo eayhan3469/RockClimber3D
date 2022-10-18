@@ -9,6 +9,7 @@ public class GameManager : Singleton<GameManager>
 
     public static Action OnGameStart;
     public static Action OnGameFinish;
+    public static Action OnGameFail;
     public static Action<Stone> OnAStoneClicked;
 
     public bool GameHasStarted = false;
